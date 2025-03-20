@@ -15,5 +15,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "PraphasiriWannawong" --password-stdin
-        docker image build -t PraphasiriWannawong/egco341_dockergit:latest .
-        docker push PraphasiriWannawong/egco341_dockergit:latest
+        docker image build -t PraphasiriWannawong/egco341_docker:latest .
+        docker push PraphasiriWannawong/egco341_docker:latest
